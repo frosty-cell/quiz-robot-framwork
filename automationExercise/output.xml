@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.5 on win32)" generated="20240129 10:09:31.292" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase03" source="c:\UPwork\UP-Tester\automationExercise\testcase03.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240129 10:09:31.656" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<status status="PASS" starttime="20240129 10:09:31.655" endtime="20240129 10:09:36.475"/>
+</kw>
+<test id="s1-t1" name="Logout" line="46">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://automationexercise.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20240129 10:09:36.488" level="INFO">Current location is 'https://automationexercise.com/'.</msg>
+<status status="PASS" starttime="20240129 10:09:36.476" endtime="20240129 10:09:36.488"/>
+</kw>
+<kw name="Click TO LOGIN PAGE">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240129 10:09:36.491" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20240129 10:09:36.490" endtime="20240129 10:09:37.607"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:36.489" endtime="20240129 10:09:37.608"/>
+</kw>
+<kw name="Input EMAIL">
+<arg>${EMAIL}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[2]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 10:09:37.612" level="INFO">Typing text 'thanet555@gmail.com' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[2]'.</msg>
+<status status="PASS" starttime="20240129 10:09:37.611" endtime="20240129 10:09:38.217"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:37.609" endtime="20240129 10:09:38.218"/>
+</kw>
+<kw name="Input PASSWORD">
+<arg>${PASSWORD}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[3]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 10:09:38.220" level="INFO">Typing text '123456789' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[3]'.</msg>
+<status status="PASS" starttime="20240129 10:09:38.219" endtime="20240129 10:09:38.364"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:38.218" endtime="20240129 10:09:38.365"/>
+</kw>
+<kw name="Click LOGIN button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[1]/div/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240129 10:09:38.367" level="INFO">Clicking element '//*[@id="form"]/div/div/div[1]/div/form/button'.</msg>
+<status status="PASS" starttime="20240129 10:09:38.366" endtime="20240129 10:09:53.976"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:38.365" endtime="20240129 10:09:53.976"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>thanet</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240129 10:09:53.998" level="INFO">Current page contains text 'thanet'.</msg>
+<status status="PASS" starttime="20240129 10:09:53.978" endtime="20240129 10:09:53.998"/>
+</kw>
+<kw name="Click LOGOUT">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240129 10:09:54.002" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20240129 10:09:54.001" endtime="20240129 10:09:55.244"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:54.000" endtime="20240129 10:09:55.245"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://automationexercise.com/login</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20240129 10:09:55.254" level="INFO">Current location is 'https://automationexercise.com/login'.</msg>
+<status status="PASS" starttime="20240129 10:09:55.246" endtime="20240129 10:09:55.254"/>
+</kw>
+<status status="PASS" starttime="20240129 10:09:36.476" endtime="20240129 10:09:55.255"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240129 10:09:55.258" endtime="20240129 10:09:57.567"/>
+</kw>
+<doc>automationexercise testcase03, 04</doc>
+<status status="PASS" starttime="20240129 10:09:31.299" endtime="20240129 10:09:57.567"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase03">Testcase03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
